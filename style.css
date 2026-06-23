@@ -1,0 +1,38 @@
+body{
+	background-color: grey;
+}
+h1{
+	color: white;
+	font-family: "Press Start 2P", "consolas", sans-serif;
+}
+p{
+	color: white;
+	background-color: yellow; 
+	font-family: consolas, sans-serif; 
+	/* some web browsers dont support some fonts so people tend to list 
+	two or three fonts incase, for more fonts u can check fonts.google.com*/
+}
+#p1{
+	color: tomato;
+	font-family: 'Gill Sans';
+	font-style: italic;
+	font-weight: bold;
+	text-decoration: cyan dotted underline;
+	font-size: 18px;
+}
+.odd{
+	color: red;
+}
+.even{
+	color:blueviolet
+}
+#p2{
+	color: black;
+	background-color: cyan;
+	font-family: 'Arial Narrow', Arial, sans-serif;
+	border-style: dotted;
+	border-width: 5px;
+	border-color: gold;
+	border-radius: 10px;
+	padding: 5px;
+}
