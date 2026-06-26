@@ -1,0 +1,27 @@
+body{
+	/* border: 2px solid;*/
+	margin: 0px;
+}
+
+#box1{
+	border:5px solid;
+	width: 250px;
+	height: 250px;
+	font-size: 22px;
+	background: greenyellow;
+
+	padding: 40px;
+	margin-top: 50px;
+	margin-left: 50px;
+	margin-bottom: 50px;
+}
+#box2{
+	border:5px solid;
+	width: 250px;
+	height: 250px;
+	font-size: 22px;
+	background: dodgerblue;
+	/* margin-left: 20%; */
+	margin-right: auto;
+	margin-left: auto;
+}

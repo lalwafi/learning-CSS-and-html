@@ -1,0 +1,80 @@
+/*
+justify-content: Aligns flex items along the x axis of the current 
+			line of the flex container.
+align-items: Aligns flex items along the y axis of the current 
+			line of the flex container
+align-content: If your flex stuff has multiple rows, this tells 
+			those rows where to sit.
+for the above:
+	- flex-start
+	- flex-end
+	- center
+	- space_between
+	- space_around
+	- space-evenly
+
+flex-direction: This sets which way the flex items line up. 
+			Left‑to‑right, right‑to‑left, top‑to‑bottom, whatever.
+			- row
+			- row-reverse
+			- column
+			- column-reverse
+
+gap: to specify the gap in px between elements, stays fixed.
+column-gap: same as gap but for y axis;
+row-gap: same as gap but for x axis;
+flex-wrap: tells your flex items whether they should stay on one 
+			line or spill onto new lines, and it decides which 
+			direction those new lines stack.
+
+flex-shrink: Sets the flex shrink factor. Negative numbers are 
+			invalid. 1 is default
+flex-grow: Sets the flex grow factor. Negative numbers are invalid.
+			1 is default.
+max-width: This sets maximum width something is allowed to be.
+min-width: This sets minimum width something is allowed to be.
+*/
+body{
+	min-height: 800px;
+	border: 8px solid black;
+	display: flex;
+	gap: 10px;
+
+
+	/* column-gap: 10px;
+	row-gap: 30px;
+	flex-wrap:wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center; */
+
+	/* flex-direction:column;
+	justify-content: space-evenly;
+	align-items:center; */
+}
+
+#box1{
+	flex-shrink: 5;
+	flex-grow: 5;
+}
+
+.box{
+	flex-shrink: 1;
+	flex-grow: 1;
+	max-width: 300px;
+	min-width: 100px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 200px;
+	width: 200px;
+	background-color: skyblue;
+	font-size: 40pt;
+}
+
+@media(max-width: 575px){
+	body{
+		flex-wrap: wrap;
+	}
+}
