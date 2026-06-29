@@ -5,6 +5,8 @@ align-items: Aligns flex items along the y axis of the current
 			line of the flex container
 align-content: If your flex stuff has multiple rows, this tells 
 			those rows where to sit.
+align-self: Allows the default alignment along the cross axis to 
+			be overridden for individual flex items.
 for the above:
 	- flex-start
 	- flex-end
@@ -33,12 +35,19 @@ flex-grow: Sets the flex grow factor. Negative numbers are invalid.
 			1 is default.
 max-width: This sets maximum width something is allowed to be.
 min-width: This sets minimum width something is allowed to be.
+
+margin-right: Sets the space outside an element. Supports 1–4 values. 
+			Negative values are allowed.
+				- order 'margin: top right bottom left;'
+				- or auto rather than px
 */
 body{
 	min-height: 800px;
 	border: 8px solid black;
 	display: flex;
 	gap: 10px;
+	align-items: flex-start;
+	justify-content: flex-end;
 
 
 	/* column-gap: 10px;
@@ -56,6 +65,8 @@ body{
 #box1{
 	flex-shrink: 5;
 	flex-grow: 5;
+	/* align-self: flex-end; */
+	margin-right: auto;
 }
 
 .box{
